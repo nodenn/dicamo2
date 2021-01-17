@@ -134,7 +134,8 @@
   width: 100%;
   position: relative;
   display: block;
-  background: url(../img/touchMonitor.png) no-repeat center/cover;
+  /* background: url(../img/touchMonitor.png) no-repeat center/cover; */
+  left: 10%;
 }
 .intro_title {
   position: relative;
