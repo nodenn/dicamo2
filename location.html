@@ -6,6 +6,8 @@
   <title>DICAMO - 회사소개</title>
   <link rel="stylesheet" href="css/location.css">
   <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/m_default.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
   <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=10zpmrc91c"></script>
 </head>
 <body>
@@ -20,18 +22,63 @@
         <div class="menu">
           <ul class="category">
             <li>
-              <a href="about.html">회사소개</a>
+              <a href="about.html">ABOUT</a>
             </li>
             <li>
-              <a href="nESL.html">서비스</a>
+              <a href="nESL.html">SERVICE</a>
             </li>
             <li>
-              <a href="news.html">뉴스</a>
+              <a href="notice.html">INFO</a>
             </li>
             <li>
-              <a href="inquiry.html">고객지원</a>
+              <a href="location.html">CONTACT</a>
             </li>
           </ul>
+        </div>
+        <div class="slide_menu">
+          <input type="checkbox" id="trigger">
+          <label for="trigger">
+              <span></span>
+              <span></span>
+              <span></span>
+          </label>
+          <div class="sidebar">
+              <ul>
+                <li>
+                  <div class="cate_title">
+                    <span>ABOUT</span>
+                  </div>
+                  <div class="cate_desc">
+                    <a href="about.html">회사소개</a>
+                    <a href="partner.html">파트너</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="cate_title">
+                    <span>BUSINESS</span>
+                  </div>
+                  <div class="cate_desc">
+                    <a href="nESL.html">차세대 전자가격표시기</a>
+                    <a href="platform.html">플랫폼 소개</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="cate_title">
+                    <span>INFO</span>
+                  </div>
+                  <div class="cate_desc">
+                    <a href="notice.html">공지사항</a>
+                    <a href="news.html">뉴스</a>
+                    <a href="gallery.html">고객사례</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="cate_title">
+                    <a href="location.html">오시는 길<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                  </div>
+                </li>
+              </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -42,13 +89,6 @@
         </div>
       </div>
       <div class="page_cont_area">
-        <div class="page_cate">
-          <ul>
-            <li><a href="about.html">회사소개</a></li>
-            <li><a href="partner.html">파트너</a></li>
-            <li><a href="location.html">오시는 길</a></li>
-          </ul>
-        </div>
         <div id="article">
           <h2>본사</h2>
           <div id="map" style="width:100%;height:400px;"></div>

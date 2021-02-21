@@ -59,7 +59,6 @@
   position: relative;
   display: table-cell;
   text-align: center;
-  display: inline-block;
   width: 150px;
   height: 70px;
 }
@@ -80,7 +79,7 @@
 
 #article {
   position: relative;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 120px 0;
   overflow: hidden;
@@ -91,4 +90,16 @@
 }
 .partners {
   margin-top: 30px;
+}
+.partners img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px){
+  .page_cate ul {
+    width: 100%;
+  }
+  .page_cate ul li {
+    width: 33.33%;
+  }
 }

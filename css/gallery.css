@@ -1,7 +1,8 @@
-.menu>.category li:nth-child(4) a{
+.menu>.category li:nth-child(3) a{
   /* font-weight: 500 !important; */
   color: #769BC0 !important;
 }
+
 
 
 /*main*/
@@ -15,7 +16,8 @@
 .page_title_area {
   width: 100%;
   height: 300px;
-  background: url(../img/building.jpg) no-repeat center/cover;
+  /* background: #666; */
+  background: url(../img/damian-zaleski-RYyr-k3Ysqg-unsplash.jpg) no-repeat center/cover;
   margin: 0 auto;
   position: relative;
 }
@@ -81,44 +83,52 @@
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 120px 0;
+  padding: 120px 40px;
   overflow: hidden;
 }
-#article h2 {
-  font-size: 30px;
-  margin-bottom: 30px;
-  font-weight: 500;
-}
-#article #map {
-  margin: 0 auto;
-  border: 1px solid #ccc;
-}
-.address {
-  margin-top: 30px;
-}
-.address img {
-  /* position: relative; */
-  float: left;
-  width: 40px;
-}
-.address p {
-  float: left;
-  line-height: 40px;
-  margin-left: 10px;
-}
-.address p span {
-  font-size: 20px;
-  font-weight: 500;
-}
 
-@media screen and (max-width: 1024px){
-  #article {
-    padding: 120px 40px;
-  }
-  .page_cate ul {
-    width: 100%;
-  }
-  .page_cate ul li {
-    width: 33.33%;
-  }
+.gallery_contents {
+  display: block;
+}
+.gallery_list li{
+  border: 1px solid #ccc;
+  display: block;
+  float: left;
+  width: 32%;
+  margin: 0 0 2% 2%;
+}
+.gallery_list li:first-child {
+  margin-left: 0;
+}
+.gallery_list li a {
+  position: relative;
+  display: block;
+  /* height: 100%; */
+}
+.prod_Box {
+  margin: 0 auto;
+  padding: 15px;
+}
+.prod_img {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.prod_img img {
+  width: 100%;
+  max-height: 200px;
+}
+.prod_title {
+  margin-top: 10px;
+}
+.prod_title p {
+  font-size: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 500;
+}
+.gallery_list li:hover {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
 }
