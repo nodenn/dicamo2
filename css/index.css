@@ -71,15 +71,19 @@
 .make::after {
   content: '';
   position: absolute;
+  z-index: -1;
   top: 0;
   width: 100%;
   height: 591px;
-  opacity: 0.1;
+  opacity: 0.4;
   background: url(../img/pic02.jpg) no-repeat center/cover;
 }
 .make_box {
-  padding: 80px;
+  padding: 80px 40px;
+  max-width: 1400px;
   background: rgba(255, 255, 255, 0.45);
+  display: block;
+  margin: 0 auto;
 }
 .make_title {
   position: relative;
@@ -99,12 +103,11 @@
 .make_list {
   margin-top: 80px;
   display: inline-block;
-  margin: 30px auto;
+  margin: 35px auto;
   width: 100%;
   text-align: center;
 }
 .make_list ul {
-  margin-top: 20px;
 }
 .make_list ul li{
   position: relative;
@@ -117,7 +120,8 @@
 }
 .make_img {
   position: relative;
-  padding: 5px 0;
+  /* padding: 5px 0; */
+  padding-bottom: 20px;
   display: block;
 }
 .make_img img {
@@ -125,14 +129,12 @@
   margin: 0 auto;
 }
 .make_list ul li p {
-  display: inline-block;
-  margin-top: 20px;
+  margin-top: 7px;
   word-break: keep-all;
+  font-size: 18px;
 }
-.make_list ul li p span {
-  font-size: 24px;
-  margin-bottom: 7px;
-  display: inline-block;
+.make_list ul li span {
+  font-size: 30px;
 }
 
 .service {
@@ -143,11 +145,13 @@
 .service h3 {
   font-size: 45px;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 .service ul {
-  margin: 30px 0;
-  width: 100%;
+  margin: 0 auto;
+  /* width: 100%; */
+  max-width: 1400px;
+  display: block;
 }
 .service ul li a{
   width: 70%;
@@ -165,7 +169,7 @@
 }
 .desc {
   position: relative;
-  left: 100px;
+  left: 80px;
   bottom: -260px;
 }
 .desc h2 {
@@ -277,6 +281,7 @@
   display: block;
   float: left;
   width: 30%;
+  margin-right: 5%;
 }
 .contact_info h2 {
   display: block;
@@ -296,7 +301,7 @@
   margin-bottom: 5px;
 }
 .contact_map{
-  width: 70%;
+  width: 65%;
   /* float: right; */
   display: inline-block;
   /* display: block; */
@@ -308,9 +313,98 @@
 }
 
 
+@media screen and (max-width: 1024px) {
+  .make {
+    overflow: hidden;
+    height: 1000px;
+  }
+  .make::after {
+    height: 1000px;
+  }
+  .make_box {
+    padding: 60px 40px;
+    overflow: hidden;
+  }
+  .make_img {
+    padding: 0;
+  }
+  .make_title {
+    margin-top: 30px;
+  }
+  .make_title h2 {
+    font-size: 42px;
+    line-height: 1.2em;
+  }
+  .make_title p {
+    padding-top: 10px;
+  }
+  .make_list {
+    display: block;
+    /* margin: 40px 0; */
+    margin: 0;
+  }
+  .make_list ul {
+    /* display: inline-block; */
+    margin-top: 0px;
+  }
+  .make_list ul li {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 60px;
+  }
+  .make_list ul li p {
+    display: block;
+    margin-top: 10px;
+  }
+  .make_list ul li span {
+    display: block;
+    margin-top: 15px;
+  }
+  
+  .service ul li a {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 768px){
   .main_title {
     left: 0;
     margin: 0 40px;
+  }
+
+  .contact_info {
+    width: 100%;
+    margin: 0;
+    float: none;
+  }
+  .contact_map {
+    display: block;
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .make_title {
+    margin-top: 0;
+  }
+  .make_list {
+    margin: 40px 0;
+  }
+  .make_list ul li {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 50px;
+  }
+  .make_list ul li:first-child {
+    padding: 0;
+  }
+  .make_list ul li span {
+    font-size: 24px;
+  }
+  .make_list ul li p {
+    font-size: 16px;
   }
 }

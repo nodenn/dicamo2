@@ -163,11 +163,11 @@ float: left;
 .where {
 display: inline-block;
 }
-.organization, .global{
+.partner, .global{
   position: relative;
   display: block;
 }
-.organization>img, .global>img {
+.partner>img, .global>img {
   display: block;
   max-width: 100%;
   margin: 0 auto;

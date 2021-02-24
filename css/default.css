@@ -124,6 +124,115 @@ div {
 }
 
 
+.slide_menu {
+  /* display: none; */
+  display: block;
+  float: right;
+}
+input[id=trigger] {
+  display: none;
+}
+label[for=trigger] {
+  width: 30px;
+  height: 25px;
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  transition: 0.5s;
+  /* margin: 22px 40px 0 0; */
+  margin-top: 22px;
+  z-index: 999;
+}
+label[for=trigger] span {
+  position: absolute;
+  height: 2px;
+  background: #000;
+  width: 100%;
+  right: 0;
+  transition: 0.3s;
+}
+label[for=trigger] span:nth-child(1){
+  top: 0;
+}
+label[for=trigger] span:nth-child(2){
+  top: 50%;
+}
+label[for=trigger] span:nth-child(3){
+  top: 100%;
+}
+input[id=trigger]:checked + label[for=trigger] span:nth-child(1){
+  top: 50%;
+  transform: translate(50%, 50%);
+  transform: rotate(45deg);
+}
+input[id=trigger]:checked + label[for=trigger] span:nth-child(2){
+  opacity: 0;
+}
+input[id=trigger]:checked + label[for=trigger] span:nth-child(3){
+  top: 50%;
+  transform: translate(50%, 50%);
+  transform: rotate(-45deg);
+}
+
+.sidebar {
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+  right: -20%;
+  margin: 0;
+  transition: 0.5s;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+/* input[id=trigger]:checked ~ .sidebar {
+  top: 80px;
+  display: block;
+  position: absolute;
+  background-color: #fff;
+} */
+input[id=trigger]:checked ~ .sidebar {
+  right: 0;
+}
+
+input[id=trigger]:checked + label[for=trigger]{
+    /* right: 305px; */
+}
+
+.sidebar ul {
+  display: block;
+  /* margin: 90px 20px 0 20px; */
+  margin-top: 90px;
+}
+.sidebar ul li a {
+  display: block;
+  padding: 10px 0;
+  cursor: pointer;
+  width: 100%;
+}
+.cate_title {
+  margin: 20px 0 10px 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.sidebar ul li a:hover {
+  color: #769BC0;
+}
+.cate_title a .fa {
+  margin-left: 20px;
+}
+.cate_desc {
+  background: #eee;
+  padding: 10px 0 10px 0;
+}
+.cate_desc a{
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+
 /* sub_cate */
 .sub_cate {
   /* display: none; */
@@ -167,9 +276,6 @@ div {
   margin: 8px 0;
 }
 
-.slide_menu {
-  display: none;
-}
 
 
 /*footer*/
@@ -189,7 +295,7 @@ div {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 40px;
+  padding: 40px;
   font-size: 14px;
 }
 .footer_logo {

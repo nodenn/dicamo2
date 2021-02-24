@@ -44,6 +44,7 @@
   width: 100%;
   margin: 0 auto;
   display: block;
+  background: #f4f4f4;
 }
 .page_cate {
   background: #333333;
@@ -77,12 +78,13 @@
   color: #000;
 }
 
+
 #article {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 120px 40px;
   overflow: hidden;
+  padding: 40px 0;
 }
 .product_info {
   position: relative;
@@ -97,6 +99,47 @@
   font-size: 18px;
   margin-right: 7px;
 }
+
+
+.btn{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.btn li{
+  float: left;
+  background-color: #eee;
+  width: 20%;
+  text-align: center;
+  cursor: pointer;
+  border-right: 1px solid #ddd;
+  height: 60px;
+  padding: 15px 0;
+  border-top: 2px solid transparent;
+}
+.btn li:last-child{
+  border-right: none;
+}
+.btn li:hover,
+.btn li.active{
+  background-color: #fff;
+  border-top: 2px solid #769BC0;
+}
+
+
+.tabs div{
+  background-color: #fff;
+  padding: 80px 40px;
+  box-sizing: border-box;
+  display: none;
+}
+.tabs div.active{
+  display: block;
+} 
+
+
 .product {
   margin-top: 20px;  
   width: 100%;
@@ -128,24 +171,24 @@
   font-weight: 500; 
 }
 
-.model {
+#tab2 {
   max-width: 1200px;
-  margin-top: 120px;
 }
-.model p {
+#tab2 p {
   font-size: 20px;
   font-weight: 500;
 }
-.model .fa {
+#tab2 .fa {
   font-size: 18px;
   margin-right: 7px;
 }
-.modelBox {
+#tab2 .modelBox {
   top: 60px;
   position: relative;
-  display: block;
+  display: block !important;
+  padding-top: 20px !important;
 }
-.inner {
+#tab2 .inner {
   position: relative;
   text-align: center;
   float: left;
@@ -154,18 +197,20 @@
   height: 180px;
   border: 1px solid #ddd;
   border-radius: 7px;
+  display: block !important;
 }
-.inner:first-child {
+#tab2 .inner:first-child {
   margin: 0;
 }
-.inner>p {
+#tab2 .inner>p {
   position: relative;
   display: block;
   top: 50%;
   transform: translateY(-50%);
   padding-top: 15px;
+  font-size: 16px;
 }
-.inner h3 {
+#tab2 .inner h3 {
   position: absolute;
   width: 70%;
   background: #2D3773;
@@ -178,7 +223,7 @@
   font-size: 20px;
   font-weight: 500;
 }
-.modelBox p {
+#tab2 .modelBox p {
   overflow: hidden;
   position: relative;
   display: inline-block;
@@ -186,20 +231,18 @@
   font-weight: 400;
 }
 
-.price {
+#tab3 {
   position: relative;
-  display: block;
-  margin-top: 160px;
 }
-.price p {
+#tab3 p {
   font-size: 20px;
   font-weight: 500;
 }
-.price .fa {
+#tab3 .fa {
   font-size: 18px;
   margin-right: 7px;
 }
-.plat_price {
+#tab3 .plat_price {
   margin-top: 20px;  
   width: 100%;
   border-collapse: collapse;
@@ -209,37 +252,46 @@
   text-align: center;
   table-layout: fixed;
 }
-.plat_price tbody tr {
+#tab3 .plat_price tbody tr {
   display: table-row;
 }
-.plat_price tbody tr:first-child td {
+#tab3 .plat_price tbody tr:first-child td {
   padding: 5px;
 }
-.plat_price tbody tr:first-child td div {
+#tab3 .plat_price tbody tr:first-child td div {
   background: #f5f5f5;
   border-radius: 10px;
   padding: 10px;
+  display: block !important;
 }
-.plat_price tbody tr th {
+#tab3 .plat_price tbody tr th {
   padding-right: 5px;
+  display: block !important;
 }
-.plat_price tbody tr th div{
+#tab3 .plat_price tbody tr th div{
   background: #f5f5f5;
   border-radius: 10px;
   padding: 5px;
   height: 130px;
+  display: block !important;
+  /* margin: 5px 0; */
 }
-.plat_price tbody tr:nth-child(2) th div {
+#tab3 .plat_price tbody tr:nth-child(2) th div {
   height: auto;
   padding: 15px;
+  display: block !important;
+  /* margin: 5px 0; */
 }
-.plat_price tbody tr:nth-child(2) td {
+#tab3 .plat_price tbody tr:nth-child(3) th div {
+  margin-top: 10px;
+}
+#tab3 .plat_price tbody tr:nth-child(2) td {
   border: 1px solid #ddd;
 }
-.plat_price tbody tr:nth-child(3) td {
+#tab3 .plat_price tbody tr:nth-child(3) td {
   border: 1px solid #ddd;
 }
-.plat_price tbody tr th div p{
+#tab3 .plat_price tbody tr th div p{
   position: relative;
   display: block;
   font-size: 16px;
@@ -248,15 +300,16 @@
   transform: translateY(-50%);
 }
 
-.company_info {
+#tab3 .company_info {
   position: relative;
   display: block;
   margin: 15px 0;
+  padding: 0 !important;
 }
-.company_info h3 {
+#tab3 .company_info h3 {
   margin-bottom: 10px;
 }
-.company {
+#tab3 .company {
   margin: 0 auto;
   position: relative;
   width: 70%;
@@ -264,37 +317,37 @@
   border: 1px solid #ddd;
   table-layout: fixed;
 }
-.company tbody tr {
+#tab3 .company tbody tr {
   border-bottom: 1px solid #ddd;
   display: table-row;
 }
-.company tbody tr th, .company tbody tr td {
+#tab3 .company tbody tr th, .company tbody tr td {
   border-right: 1px solid #ddd;
   padding: 7px 0;
   overflow: hidden;
 }
-.company tbody tr th {
+#tab3 .company tbody tr th {
   font-weight: 400;
 }
-.company tbody tr:first-child, .company tbody tr:first-child th {
+#tab3 .company tbody tr:first-child, .company tbody tr:first-child th {
   font-weight: 500;
 }
 
-.func {
-  margin-top: 120px;
+#tab4 {
+  
 }
-.func p {
+#tab4 p {
   font-size: 20px;
   font-weight: 500;
 }
-.func .fa {
+#tab4 .fa {
   font-size: 18px;
   margin-right: 7px;
 }
-.func h3 {
+#tab4 h3 {
   margin-top: 10px;
 }
-.plat_func {
+#tab4 .plat_func {
   margin-top: 20px;  
   width: 100%;
   border-collapse: collapse;
@@ -304,42 +357,42 @@
   text-align: center;
   table-layout: fixed;
 }
-.plat_func tbody tr {
+#tab4 .plat_func tbody tr {
   display: table-row;
 }
-.plat_func tbody tr th {
+#tab4 .plat_func tbody tr th {
   font-weight: 500;
   border-bottom: 1px solid #ddd;
   padding: 15px 20px;
   border-right: 1px solid #ddd;
 }
-.plat_func tbody tr th:last-child {
+#tab4 .plat_func tbody tr th:last-child {
   border-right: 0;
 }
-.plat_func tbody tr:first-child {
+#tab4 .plat_func tbody tr:first-child {
   background: #f5f5f5;
 }
-.plat_func tbody tr td {
+#tab4 .plat_func tbody tr td {
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   padding: 10px 0;
 }
-.plat_func tbody tr td:last-child {
+#tab4 .plat_func tbody tr td:last-child {
   border-right: 0;
 }
 
-.policy {
-  margin-top: 120px;
+#tab5 {
+  
 }
-.policy p {
+#tab5 p {
   font-size: 20px;
   font-weight: 500;
 }
-.policy .fa {
+#tab5 .fa {
   font-size: 18px;
   margin-right: 7px;
 }
-.plat_policy {
+#tab5 .plat_policy {
   margin-top: 20px;  
   width: 100%;
   border-collapse: collapse;
@@ -347,17 +400,19 @@
   word-break: keep-all;
   table-layout: fixed;
 }
-.plat_policy tbody tr th {
+#tab5 .plat_policy tbody tr th {
   text-align: center;
   font-weight: 500;
   padding: 5px 0;
 }
-.plat_policy tbody tr th div {
+#tab5 .plat_policy tbody tr th div {
   padding: 50px 0;
   background: #f5f5f5;
   border-radius: 10px;
+  display: block;
 }
-.plat_policy tbody tr td {
+#tab5 .plat_policy tbody tr td {
   padding: 20px 0 20px 30px;
   line-height: 1.8em;
 }
+
