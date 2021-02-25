@@ -34,3 +34,21 @@
     max-width: 1200px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .about {
+    margin-top: 80px;
+  }
+  #article>p {
+    font-size: 36px;
+    word-break: keep-all;
+  }
+  .infoBox>p {
+    width: 100%;
+    font-size: 18px;
+    padding-right: 0;
+  }
+  .imgBox {
+    width: 100%;
+  }
+}

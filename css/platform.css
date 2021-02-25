@@ -416,3 +416,17 @@
   line-height: 1.8em;
 }
 
+@media screen and (max-width: 768px){
+  #tab2 .inner {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #tab2 .modelBox {
+    padding: 40px 0 !important;
+  }
+}

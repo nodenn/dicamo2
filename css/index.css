@@ -386,6 +386,9 @@
 }
 
 @media screen and (max-width: 480px) {
+  .main_title {
+    /* margin-top: 35px; */
+  }
   .make_title {
     margin-top: 0;
   }
@@ -406,5 +409,25 @@
   }
   .make_list ul li p {
     font-size: 16px;
+  }
+  .desc {
+    left: 0;
+    margin-left: 40px;
+  }
+  .desc h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main_title p {
+    font-size: 24px;
+  }
+  .desc {
+    left: 0;
+    margin-left: 30px;
+  }
+  .desc h2 {
+    font-size: 28px;
   }
 }
